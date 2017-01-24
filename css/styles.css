@@ -1,3 +1,30 @@
-/*.output {
+.jumbotron {
+  margin-top: 20px;
+}
+
+.output {
   display: none;
-}*/
+}
+
+.deposit-withdrawl {
+  display: none;
+}
+
+p {
+  font-size: 25px;
+}
+.balance {
+  border: thin solid black;
+  padding: 5px;
+  background-color: #DAE8FC;
+}
+
+.bank-account{
+  margin-left: 34%;
+  width:30%;
+}
+
+.deposit-withdrawl {
+  margin-left: 34%;
+  width:30%;
+}

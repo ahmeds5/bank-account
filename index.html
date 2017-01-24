@@ -19,7 +19,7 @@
         </p>
       </div>
       <div class="row">
-          <div class="col-md-4">
+          <div>
             <form class="bank-account">
               <h3>Open a new account</h3>
               <label for="name">Name:</label>
@@ -30,20 +30,23 @@
             </form>
           </div>
           <div class="col-md-4">
+            <div class="output">
+              <h3>Account Info:</h3>
+              <p><span class="name"></span>, your account balance is: <br>
+                <span class="balance"></span></p>
+            </div>
+          </div>
+          <div>
             <form class="deposit-withdrawl">
               <h3>Deposit or withdraw funds:</h3>
               <label for="deposit-amount">Deposit Amount:</label>
-              <input type="number" class="form-control" id="deposit-amount"><br>
+              <input type="number" class="form-control" id="deposit-amount" value = "0"><br>
               <label for="withdraw-amount">Withdraw Amount:</label>
-              <input type="number" class="form-control" id="withdraw-amount"><br>
+              <input type="number" class="form-control" id="withdraw-amount" value = "0"><br>
               <button type="submit" class="btn btn-danger">Process</button>
             </form>
           </div>
-          <div class="col-md-4">
-            <div class="output">
-              <h3>Account Info:</h3>
-              <p><span class="name"></span>, your account balance is: $<span class="balance"></span></p>
-            </div>
+          <div>
           </div>
 
       </div>
