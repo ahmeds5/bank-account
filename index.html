@@ -25,7 +25,7 @@
               <label for="name">Name:</label>
               <input type="text" class="form-control" id="name"><br>
               <label for="initialDeposit">Deposit Amount:</label>
-              <input type="number" class="form-control" ids="initialDeposit"><br>
+              <input type="number" class="form-control" id="initialDeposit"><br>
               <button type="submit" class="btn btn-danger">Create!</button>
             </form>
           </div>
@@ -36,8 +36,14 @@
               <input type="number" class="form-control" id="deposit-amount"><br>
               <label for="withdraw-amount">Withdraw Amount:</label>
               <input type="number" class="form-control" id="withdraw-amount"><br>
-              <button type="submit" class="btn btn-danger">Create!</button>
+              <button type="submit" class="btn btn-danger">Process</button>
             </form>
+          </div>
+          <div class="col-md-4">
+            <div class="output">
+              <h3>Account Info:</h3>
+              <p><span class="name"></span>, your account balance is: $<span class="balance"></span></p>
+            </div>
           </div>
 
       </div>
