@@ -46,8 +46,15 @@ $(document).ready(function(){
       var inputtedDeposit = parseInt($("#deposit-amount").val());
       var inputtedWithdraw = parseInt($("#withdraw-amount").val());
 
-      $(".balance").text(newBank.newBalance(inputtedDeposit, inputtedWithdraw));
+      var dt = new Date();
+      var utcDate = dt.toUTCString();
 
+      $(".balance").text(newBank.newBalance(inputtedDeposit, inputtedWithdraw));
+      $(".transaction").show();
+      $(".transaction ul").append('<li>'+ utcDate + ' Deposit: $'+ inputtedDeposit.toString() + "; Withdraw: $" + inputtedWithdraw.toString()+ '; Ending balance: $' + newBank.balance + '</li>');
+
+      $("#deposit-amount").val('0');
+      $("#withdraw-amount").val('0');
     })
   });
 
