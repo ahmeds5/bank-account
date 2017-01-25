@@ -13,7 +13,7 @@ Bank.prototype.newBalance = function(inputtedDeposit, inputtedWithdraw){
     inputtedWithdraw = 0;
   }
 
-  if(this.balance > 0){
+  if(this.balance > 0|inputtedDeposit > 0){
     var output =  this.balance + inputtedDeposit - inputtedWithdraw;
     this.balance = output;
     return "$" + output.toString();
